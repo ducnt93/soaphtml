@@ -744,16 +744,96 @@ button[type=button]:disabled:hover {
     padding: 5px;
 }
 
+/*Step 3*/
+.step-3-0-content{
+    font-size: 70px;
+}
+
 /*Step 3-1*/
 .step-3-1-question > .step-3-1-question-text{
     font-weight: 700;
     font-size: 36px;
 }
 
+.step3-1 > .step-3-1-job-question > .step-3-1-chooses{
+    width: 100%;
+    text-align: center;
+}
+
+.step3-1 > .step-3-1-job-question > .step-3-1-chooses > .step-3-1-chooses-button{
+    width: 25%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.step3-1 > .step-3-1-job-sub-question{
+    width: 100%;
+}
+
+.step3-1 > .step-3-1-job-sub-question > .step-3-1-chooses{
+    width: 100%;
+    text-align: center;
+}
+
+.step3-1 > .step-3-1-job-sub-question > .step-3-1-chooses > .step-3-1-chooses-button{
+    width: 23%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.step3-1 > .step-3-1-marriage-question {
+    width: 100%;
+}
+.step3-1 > .step-3-1-marriage-question > .step-3-1-chooses{
+    width: 100%;
+    text-align: center;
+}
+
+.step3-1 > .step-3-1-marriage-question > .step-3-1-chooses > .step-3-1-chooses-button{
+    width: 25%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.button-motion-padding{
+    padding:0px !important;
+    vertical-align: bottom;
+}
+
+
 /*Step 3-2*/
 .step-3-2-question > .step-3-2-question-text{
     font-weight: 700;
     font-size: 36px;
+}
+
+.step3-2 > .step-3-2-motion > .step-3-2-chooses{
+    width: 100%;
+    text-align: center;
+}
+
+.step3-2 > .step-3-2-sub-motion > .step-3-2-chooses{
+    width: 100%;
+}
+
+.step3-2 > .step-3-2-motion > .step-3-2-chooses > .step-3-2-chooses-button{
+    width: 25%;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.step3-2 > .step-3-2-sub-motion > .step-3-2-chooses > .step-3-2-chooses-group-1 > .step-3-2-chooses-button{
+    width: 31.33%;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 18px 0px;
+}
+
+.step3-2 > .step-3-2-sub-motion > .step-3-2-chooses > .step-3-2-chooses-group-2 > .step-3-2-chooses-button{
+    width: 31.33%;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 18px 0px;
 }
 
 /*Step 3-3*/

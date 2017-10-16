@@ -285,6 +285,125 @@ $(document).ready(function () {
         })
     });
 
+    // Step 3-1 check button
+    jQuery(function ($) {
+        $('.button-job-question').click(function () {
+            if($(this).hasClass('button-job-question') && !$(this).hasClass('highlight')){
+                $that = $(this);
+
+                $('.step-3-1-job-question .step-3-1-chooses').find('button').removeClass('highlight');
+                $that.toggleClass('highlight');
+            }  else {
+                $(this).toggleClass('highlight')
+            }
+
+        //    check and show sub job question
+            if($that.hasClass('highlight')){
+                if($that.val() == '2'){
+                    $('.step-3-1-job-sub-question').css('display', 'block');
+                } else {
+                    $('.step-3-1-job-sub-question').css('display', 'none');
+                }
+            } else{
+                $('.step-3-1-job-sub-question').css('display', 'none');
+            }
+        });
+
+        $('.button-job-sub-question').click(function () {
+            $(this).toggleClass('highlight');
+        });
+
+        $('.button-marriage-question').click(function () {
+            if($(this).hasClass('button-marriage-question') && !$(this).hasClass('highlight')){
+                $that = $(this);
+
+                $('.step-3-1-marriage-question .step-3-1-chooses').find('button').removeClass('highlight');
+                $that.toggleClass('highlight');
+            }  else {
+                $(this).toggleClass('highlight')
+            }
+        });
+
+        $('.button-job').click(function () {
+            var flagJob = false,
+                flagSubJob = false,
+                flagMarriage = false,
+                job = '';
+            $('.button-job').each(function () {
+                if($(this).hasClass('button-job-question') && $(this).hasClass('highlight')){
+                    flagJob = true;
+                    job = $(this).val();
+                }
+
+                if($(this).hasClass('button-job-sub-question') && $(this).hasClass('highlight')){
+                    flagSubJob = true;
+                }
+
+                if($(this).hasClass('button-marriage-question') && $(this).hasClass('highlight')){
+                    flagMarriage = true;
+                }
+            });
+            switch (job){
+                case '2':
+                    if(flagMarriage && flagSubJob && flagJob){
+                        $('.step-3-1-next-step').prop('disabled', false);
+                    } else {
+                        $('.step-3-1-next-step').prop('disabled', true);
+                    }
+                    break;
+                case '1':
+                    if(flagMarriage && flagJob){
+                        $('.step-3-1-next-step').prop('disabled', false);
+                    } else {
+                        $('.step-3-1-next-step').prop('disabled', true);
+                    }
+                    break;
+            }
+        });
+
+    });
+
+    // Step 3-2 check button
+    jQuery(function ($) {
+        $('.button-motion-question').click(function () {
+            if($(this).hasClass('button-motion-question') && !$(this).hasClass('highlight')){
+                $that = $(this);
+
+                $('.step-3-2-motion .step-3-2-chooses').find('button').removeClass('highlight');
+                $that.toggleClass('highlight');
+            }  else {
+                $(this).toggleClass('highlight')
+            }
+
+            //    check and show sub job question
+            if($that.hasClass('highlight')){
+                if($that.val() == '2'){
+                    $('.step-3-2-sub-motion').css('display', 'block');
+                } else {
+                    $('.step-3-2-sub-motion').css('display', 'none');
+                }
+            } else{
+                $('.step-3-2-sub-motion').css('display', 'none');
+            }
+
+            // Check to turn on or off button next
+            if ($(this).hasClass('highlight')) {
+                switch ($that.val()) {
+                    case '2':
+                        if($that.val() == '2'){
+
+                        } else{
+                            $('.step-2-5-next-step').prop('disabled', true);
+                        }
+                        break;
+                    case '1':
+                        break;
+                }
+            }
+        })
+    });
+
+
     // Step 2 click to number
     if($('.step-1-1-number-input')){
         $('.dot-input').prop('disabled',true);
@@ -330,6 +449,9 @@ $(document).ready(function () {
             $(this).prop('disabled', false);
         }
         if($(this).hasClass('step-2-4-next-step')){
+            $(this).prop('disabled', false);
+        }
+        if($(this).hasClass('step-2-5-next-step')){
             $(this).prop('disabled', false);
         }
         if($(this).hasClass('step-2-6-next-step')){
