@@ -841,6 +841,53 @@ button[type=button]:disabled:hover {
     font-weight: 700;
     font-size: 36px;
 }
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-1{
+    width: 100%;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-2{
+    width: 100%;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-3{
+    width: 100%;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-4{
+    width: 100%;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-1 > .step-3-3-chooses-button{
+    width: 18%;
+    font-size: 25px;
+    font-weight: 700;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-2 > .step-3-3-chooses-button{
+    width: 18%;
+    font-size: 25px;
+    font-weight: 700;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-3 > .step-3-3-chooses-button{
+    width: 18%;
+    font-size: 25px;
+    font-weight: 700;
+}
+.step3-3 > .step-3-3-chooses > .step-3-3-chooses-group-4 > .step-3-3-chooses-button{
+    width: 18%;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.button-other-reason-special-1{
+    padding: 1px 0px !important;
+    vertical-align: bottom;
+}
+
+.button-other-reason-special-2{
+    padding: 12px 0px !important;
+    vertical-align: bottom;
+}
+.button-other-reason-special-3{
+    padding: 2px 0px !important;
+    vertical-align: bottom;
+}
+
 /*Button navigate*/
 .list-inline{
     margin-left: 0px;
@@ -925,7 +972,7 @@ and (max-device-width : 767px) {
         font-size: 28px;
     }
     .button-not-choose-status{
-        font-size: 28px !important;
+        font-size: 23px !important;
     }
 
     /*Step 2-8*/
@@ -969,6 +1016,62 @@ and (max-device-width : 767px) {
         vertical-align: bottom;
         font-size: 20px !important;
     }
+
+    /*Step 2-11*/
+    #not-to-say{
+        width: 77.2% !important;
+    }
+
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-1 > .step-2-11-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-2 > .step-2-11-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-3 > .step-2-11-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 19px 0px !important;
+    }
+
+    /*Step 2-12*/
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-1 > .step-2-12-chooses-button{
+        width: 21.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-2 > .step-2-12-chooses-button{
+        width: 21.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    /*Step 2-13*/
+    .step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-1 > .step-2-13-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-2 > .step-2-13-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-3 > .step-2-13-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-4 > .step-2-13-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+
 }
 
 /*ipad*/
@@ -995,7 +1098,6 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         font-size: 36px;
         width: 30%;
     }
-
 }
 
 /*Ipad - Ipad mini*/
@@ -1039,7 +1141,7 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         font-size: 28px;
     }
     .button-not-choose-status{
-        font-size: 28px !important;
+        font-size: 23px !important;
     }
 
     /*step 2-8*/
@@ -1081,6 +1183,40 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         padding: 0px !important;
         vertical-align: bottom;
     }
+
+    /*Step 2-11*/
+    #not-to-say{
+        width: 77.2% !important;
+    }
+
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-1 > .step-2-11-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-2 > .step-2-11-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-3 > .step-2-11-chooses-button{
+        width: 16.9%;
+        font-size: 20px;
+        padding: 19px 0px !important;
+    }
+
+    /*Step 2-12*/
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-1 > .step-2-12-chooses-button{
+        width: 21.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-2 > .step-2-12-chooses-button{
+        width: 21.9%;
+        font-size: 20px;
+        padding: 5px;
+    }
+
 }
 
 @media only screen
@@ -1151,6 +1287,39 @@ and (-webkit-min-device-pixel-ratio: 1)  {
         padding: 0px !important;
         vertical-align: bottom;
     }
+
+    /*Step 2-11*/
+    #not-to-say{
+        width: 77.7% !important;
+    }
+
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-1 > .step-2-11-chooses-button{
+        width: 17.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-2 > .step-2-11-chooses-button{
+        width: 17.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-3 > .step-2-11-chooses-button{
+        width: 17.6%;
+        font-size: 20px;
+        padding: 19px 0px !important;
+    }
+
+    /*Step 2-12*/
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-1 > .step-2-12-chooses-button{
+        width: 22.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-2 > .step-2-12-chooses-button{
+        width: 22.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
 }
 
 /*Ipad pro*/
@@ -1171,6 +1340,39 @@ and (-webkit-min-device-pixel-ratio: 1.5) {
     /*Step 2-4*/
     .step2-4 > .step-2-4-answers > .button-at-time{
         width: 47.5%;
+    }
+
+    /*Step 2-11*/
+    #not-to-say{
+        width: 77.7% !important;
+    }
+
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-1 > .step-2-11-chooses-button{
+        width: 17.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-2 > .step-2-11-chooses-button{
+        width: 17.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-3 > .step-2-11-chooses-button{
+        width: 17.6%;
+        font-size: 20px;
+        padding: 19px 0px !important;
+    }
+
+    /*Step 2-12*/
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-1 > .step-2-12-chooses-button{
+        width: 22.6%;
+        font-size: 20px;
+        padding: 5px;
+    }
+    .step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-2 > .step-2-12-chooses-button{
+        width: 22.6%;
+        font-size: 20px;
+        padding: 5px;
     }
 }
 

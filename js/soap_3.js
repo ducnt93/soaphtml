@@ -365,6 +365,22 @@ $(document).ready(function () {
 
     // Step 3-2 check button
     jQuery(function ($) {
+        $('.button-sub-motion-question').click(function () {
+            $(this).toggleClass('highlight');
+
+            var flagCheck = 0;
+            $('.button-sub-motion-question').each(function () {
+                if($(this).hasClass('highlight')){
+                    flagCheck += 1;
+                }
+            });
+            if(flagCheck > 0){
+                $('.step-3-2-next-step').prop('disabled', false);
+            } else{
+                $('.step-3-2-next-step').prop('disabled', true);
+            }
+        });
+
         $('.button-motion-question').click(function () {
             if($(this).hasClass('button-motion-question') && !$(this).hasClass('highlight')){
                 $that = $(this);
@@ -386,19 +402,22 @@ $(document).ready(function () {
                 $('.step-3-2-sub-motion').css('display', 'none');
             }
 
+            if($($that.val() == '1')){
+                $('.step-3-2-chooses-group-1').find('button').removeClass('highlight');
+                $('.step-3-2-chooses-group-2').find('button').removeClass('highlight');
+            }
+
             // Check to turn on or off button next
             if ($(this).hasClass('highlight')) {
                 switch ($that.val()) {
                     case '2':
-                        if($that.val() == '2'){
-
-                        } else{
-                            $('.step-2-5-next-step').prop('disabled', true);
-                        }
                         break;
                     case '1':
+                        $('.step-3-2-next-step').prop('disabled', false);
                         break;
                 }
+            } else {
+                $('.step-3-2-next-step').prop('disabled', true);
             }
         })
     });
