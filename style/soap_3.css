@@ -1,0 +1,1105 @@
+.wizard {
+    margin: 20px auto;
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.wizard .nav-tabs {
+    position: relative;
+    margin: 0px auto;
+    margin-bottom: 0;
+    border-bottom-color: #e0e0e0;
+    border: none;
+}
+
+.wizard > div.wizard-inner {
+    position: relative;
+    background: #afeafd;
+    padding: 10px 0px 40px 0px;
+}
+
+.connecting-line {
+    height: 10px;
+    background: #000;
+    position: absolute;
+    width: 80%;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+    top: 37%;
+    z-index: 2;
+}
+
+.wizard .nav-tabs > li.active > a, .wizard .nav-tabs > li.active > a:hover, .wizard .nav-tabs > li.active > a:focus {
+    color: #555555;
+    cursor: default;
+    border: 0;
+    border-bottom-color: transparent;
+}
+
+.wizard .nav-tabs .step-first a{
+    float: left;
+}
+
+.wizard .nav-tabs .step-second a{
+    float: right;
+}
+
+span.round-tab {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: inline-block;
+    border-radius: 100px;
+    background: #000;
+    /*border: 1px solid #000;*/
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 700;
+}
+span.round-tab i{
+    color:#555555;
+}
+.wizard li.active span.round-tab {
+    background: #000;
+    /*border: 1px solid #000*/
+
+}
+.wizard li.active span.round-tab i{
+    color: #000;
+}
+
+span.round-tab:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.wizard .nav-tabs > li.step-key {
+    width: 50%;
+    padding: 0px 50px 0px 50px;
+}
+
+.wizard li:after {
+    content: " ";
+    position: absolute;
+    left: 46%;
+    opacity: 0;
+    margin: 0 auto;
+    bottom: 0px;
+    border: 5px solid transparent;
+    border-bottom-color: #847e7e;
+    transition: 0.1s ease-in-out;
+}
+
+/*.wizard li.active:after {*/
+    /*content: " ";*/
+    /*position: absolute;*/
+    /*left: 46%;*/
+    /*opacity: 1;*/
+    /*margin: 0 auto;*/
+    /*bottom: 0px;*/
+    /*border: 10px solid transparent;*/
+    /*border-bottom-color: #847e7e;*/
+/*}*/
+
+.wizard .nav-tabs > li a {
+    width: 70px;
+    height: 70px;
+    margin: 10px auto;
+    border-radius: 100%;
+    padding: 0;
+    color: #847e7e;
+}
+
+.wizard .nav-tabs > li a:hover {
+    background: transparent;
+    color: #847e7e;
+}
+
+.wizard .tab-pane {
+    position: relative;
+    /*padding-top: 5px;*/
+}
+
+.wizard h3 {
+    margin-top: 0;
+}
+.step1 .row {
+    margin-bottom:10px;
+}
+.step_21 {
+    border :1px solid #eee;
+    border-radius:5px;
+    padding:10px;
+}
+.step33 {
+    border:1px solid #ccc;
+    border-radius:5px;
+    padding-left:10px;
+    margin-bottom:10px;
+}
+.dropselectsec {
+    width: 68%;
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    outline: none;
+    font-weight: normal;
+}
+.dropselectsec1 {
+    width: 74%;
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    outline: none;
+    font-weight: normal;
+}
+.mar_ned {
+    margin-bottom:10px;
+}
+.wdth {
+    width:25%;
+}
+.birthdrop {
+    padding: 6px 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #333;
+    margin-left: 10px;
+    width: 16%;
+    outline: 0;
+    font-weight: normal;
+}
+
+
+/* according menu */
+#accordion-container {
+    font-size:13px
+}
+.accordion-header {
+    font-size:13px;
+    background:#ebebeb;
+    margin:5px 0 0;
+    padding:7px 20px;
+    cursor:pointer;
+    color:#fff;
+    font-weight:400;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px
+}
+.unselect_img{
+    width:18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.active-header {
+    -moz-border-radius:5px 5px 0 0;
+    -webkit-border-radius:5px 5px 0 0;
+    border-radius:5px 5px 0 0;
+    background:#F53B27;
+}
+
+.inactive-header {
+    background:#333;
+}
+
+.accordion-content {
+    display:none;
+    padding:20px;
+    background:#fff;
+    border:1px solid #ccc;
+    border-top:0;
+    -moz-border-radius:0 0 5px 5px;
+    -webkit-border-radius:0 0 5px 5px;
+    border-radius:0 0 5px 5px
+}
+.accordion-content a{
+    text-decoration:none;
+    color:#333;
+}
+.accordion-content td{
+    border-bottom:1px solid #dcdcdc;
+}
+
+.p-title {
+    text-align: center;
+    font-weight: 700;
+    content: " ";
+    position: absolute;
+    opacity: 1;
+    margin: 0 auto;
+    bottom: -30px;
+    width: 115px;
+    right: -25px;
+    color: #000;
+}
+
+li.hidden-tab {
+    display: none;
+}
+
+button.btn-navigate{
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px 0px 10px 0px;
+}
+
+.base-style {
+    min-height: 300px;
+}
+
+/*Common style*/
+.tab-pane > .title-of-page{
+    width: 100%;
+    background: #000;
+    color: #ffffff;
+    padding: 5px 0px 5px 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.btn-common{
+    text-align: center;
+    padding: 12px;
+    margin: 10px;
+    background: #ebfbff;
+    font-weight: 700;
+}
+.btn-common.highlight {
+    background:#afeafe;
+    border:1px solid #a1e3f9;
+}
+
+.btn-common:active,
+.btn-common:focus
+{
+    border:1px solid #a1e3f9;
+}
+
+button[type=button]:disabled {
+    background: #dddddd;
+    border-color: #cccccc;
+}
+
+button[type=button]:disabled:hover {
+    background: #BCBCBC;
+    border-color: #b2b2b2;
+}
+
+.padding-question-common{
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.customize-icon{
+    top: 4px;
+}
+/*Step 1*/
+.step1{
+    padding: 15px 10px 30px 25px;
+}
+
+.step1-content{
+    font-size: 70px;
+}
+
+.post-code{
+    width: 30px;
+    border: 1px solid #333333;
+    background: #befbff;
+    height: 50px;
+    font-weight: 700;
+    font-size: 30px;
+    align-content: center;
+    text-align: center;
+}
+
+.number-input-group {
+    padding: 10px 10px 30px 10px;
+    background: #cccccc;
+    width: 23%;
+    float: left;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+.number-input {
+    border-radius: 5px;
+    color: #564949;
+    background: #f7efef;
+    font-weight: 700;
+    font-size: large;
+    width: 3.0em;
+    height: 3.0em;
+    margin: 0.1em;
+}
+
+.number-input-zero{
+    border-radius: 5px;
+    color: #564949;
+    background: #f7efef;
+    font-weight: 700;
+    font-size: large;
+    width: 6.4em;
+    height: 3.0em;
+    margin: 0.1em;
+}
+
+.post-display{
+    border: 1px solid #aba3a3;
+    background: #befbff;
+    width: 90%;
+    padding: 5px;
+    height: 163px;
+}
+
+.post-code-text-input{
+    margin-bottom: 10px;
+    width: 90%;
+}
+/*Step 2*/
+.post-input-group{
+    width: 75%;
+    float: left;
+    margin-left: 10px;
+}
+
+.step2{
+    padding: 15px 10px 30px 25px;
+}
+
+.step-2-1-content{
+    font-size: 70px;
+}
+
+.text-important {
+    text-decoration: underline;
+    color: #f0ad4e;
+}
+
+
+/*Step 2-3*/
+.step-2-3-question{
+    width: 100%;
+    float: left;
+}
+
+.step-2-3-question > .step-2-3-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-1{
+    width: 100%;
+}
+
+.step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-1 > .step-2-3-chooses-button{
+    width: 31.33333%;
+    font-size: 30px;
+}
+
+.step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-2 {
+    width: 100%;
+}
+
+.step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-2 > .step-2-3-chooses-button{
+    width: 31.33333%;
+    font-size: 30px;
+}
+
+/*Step 2-4*/
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.btn-circle.btn-lg {
+    width: 50px;
+    height: 50px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 25px;
+}
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    font-size: 24px;
+    line-height: 1.33;
+    border-radius: 35px;
+}
+
+.step-2-4-question > .step-2-4-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.step2-4 > .step-2-4-answers > .button-at-time{
+    font-size: 39px;
+    width: 47.5%;
+}
+
+/*Step 2-5*/
+.step-2-5-question > .step-2-5-question-text{
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 60px;
+}
+
+.slider.slider-horizontal{
+    width: 80%;
+}
+
+.group-pain{
+    padding: 60px 0px 0px 0px;
+}
+
+.group-pain > .step-2-5-group-pain{
+    padding-left: 30px;
+}
+
+.group-pain > .step-2-5-group-pain > .step-2-5-group-pain-1{
+    font-weight: 700;
+    width: 20%;
+    float: left;
+    padding-left: 45px;
+}
+
+.group-pain > .step-2-5-group-pain > .step-2-5-group-pain-1 > .step-2-5-group-pain-1-row{
+    margin-bottom: 30px;
+}
+
+.group-pain > .step-2-5-group-pain > .step-2-5-group-pain-1 > .step-2-5-group-pain-span{
+
+}
+
+.group-pain > .step-2-5-group-pain > .step-2-5-group-pain-2{
+    width: 70%;
+    float: left;
+}
+
+.group-pain > .step-2-5-group-pain > .step-2-5-group-pain-2 > .slider-horizontal {
+    margin-bottom: 30px !important;
+}
+
+.button-slider{
+    color: black;
+}
+
+
+
+/*Step 2-6*/
+.step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1{
+    width: 100%;
+    float: left;
+}
+
+.step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1 > .step-2-6-chooses-button {
+    font-size: 36px;
+    width: 31.33333%;
+}
+
+.step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1 > .step-2-6-chooses-button > .step-2-6-chooses-text{
+    font-size: 20px;
+}
+
+.step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2{
+    width: 100%;
+    float: left;
+}
+
+.step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2 > .step-2-6-chooses-button {
+    font-size: 36px;
+    width: 31.33333%;
+}
+
+.step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2 > .step-2-6-chooses-button > .step-2-6-chooses-text{
+    font-size: 20px;
+}
+
+.step-2-6-question > .step-2-6-question-text{
+    font-weight: 700;
+    font-size: 36px;
+    width: 100%;
+    float: left;
+}
+
+.step2-6 > .step-2-6-note {
+    font-weight: 700;
+    font-size: 25px;
+    float: right;
+    padding-right: 30px;
+}
+
+/*Step 2-7*/
+.step-2-7-question > .step-2-7-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-1 {
+    float: left;
+    width: 100%;
+}
+
+.step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-1 > .step-2-7-chooses-button {
+    width: 30.9%;
+    font-size: 36px;
+}
+
+.step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-2{
+    float: left;
+    width: 100%;
+}
+
+.step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-2 > .step-2-7-chooses-button {
+    width: 30.9%;
+    font-size: 36px;
+}
+
+.step2-7 > .step-2-7-note {
+    color: red;
+    font-weight: 700;
+    float: left;
+    padding-left: 10px;
+}
+
+.button-not-choose-status {
+    padding: 0px !important;
+    font-size: 26px !important;
+    vertical-align: bottom;
+}
+
+/*Step 2-8*/
+.step-2-8-question > .step-2-8-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+.step2-8 > .step-2-8-chooses{
+    width: 100%;
+}
+
+.step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-1 > .step-2-8-chooses-button{
+    width: 23%;
+    font-size: 36px;
+}
+.step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-2 > .step-2-8-chooses-button{
+    width: 23%;
+    font-size: 36px;
+}
+
+.step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-3 > .step-2-8-chooses-button{
+    width: 48%;
+    font-size: 36px;
+}
+
+.button-bodaiin{
+    font-size: 26px !important;
+    padding: 0px !important;
+    vertical-align: bottom;
+}
+
+/*Step 2-9*/
+.step-2-9-question > .step-2-9-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+.step2-9 > .step-2-9-chooses{
+    width: 100%;
+}
+
+.step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-1 > .step-2-9-chooses-button{
+    width: 23%;
+    font-size: 36px;
+}
+.step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-2 > .step-2-9-chooses-button{
+    width: 23%;
+    font-size: 36px;
+}
+.step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-3 > .step-2-9-chooses-button{
+    width: 48%;
+    font-size: 36px;
+}
+
+.button-past-bodaiin{
+    padding: 0px !important;
+    vertical-align: bottom;
+    font-size: 26px !important;
+}
+
+
+/*Step 2-10*/
+.step-2-10-question > .step-2-10-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+.step2-10 > .step-2-10-chooses{
+    width: 100%;
+    font-size: 36px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.step2-10 > .step-2-10-chooses > .step-2-10-chooses-button{
+    font-size: 36px;
+    width: 25%;
+}
+
+/*Step 2-11*/
+.step-2-11-question > .step-2-11-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-1 > .step-2-11-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 5px;
+}
+.step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-2 > .step-2-11-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 5px;
+}
+.step2-11 > .step-2-11-chooses > .step-2-11-chooses-group-3 > .step-2-11-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 19px 0px !important;
+}
+
+#not-to-say{
+    width: 78.2% !important;
+    text-align: left;
+    padding: 19px 0px 19px 10px !important;
+}
+
+.button-all-diagnostic{
+    padding: 19px 0px !important;
+    vertical-align: bottom;
+}
+
+/*Step 2-12*/
+.step-2-12-question > .step-2-12-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-1 > .step-2-12-chooses-button{
+    width: 23%;
+    font-size: 20px;
+    padding: 5px;
+}
+.step2-12 > .step-2-12-chooses > .step-2-12-chooses-group-2 > .step-2-12-chooses-button{
+    width: 23%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.button-style-padding{
+    padding: 19px 0px !important;
+    vertical-align: bottom;
+}
+
+/*Step 2-13*/
+.step-2-13-question > .step-2-13-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-1 > .step-2-13-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 5px;
+}
+.step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-2 > .step-2-13-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 5px;
+}
+.step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-3 > .step-2-13-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 5px;
+}
+.step2-13 > .step-2-13-chooses > .step-2-13-chooses-group-4 > .step-2-13-chooses-button{
+    width: 18%;
+    font-size: 20px;
+    padding: 5px;
+}
+
+/*Step 3-1*/
+.step-3-1-question > .step-3-1-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/*Step 3-2*/
+.step-3-2-question > .step-3-2-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+/*Step 3-3*/
+.step-3-3-question > .step-3-3-question-text{
+    font-weight: 700;
+    font-size: 36px;
+}
+/*Button navigate*/
+.list-inline{
+    margin-left: 0px;
+}
+
+@media( max-width : 585px ) {
+
+    .wizard {
+        width: 90%;
+        height: auto !important;
+    }
+
+    span.round-tab {
+        font-size: 16px;
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+    }
+
+    .wizard .nav-tabs > li a {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        color: #847e7e;
+    }
+
+    .wizard li.active:after {
+        content: " ";
+        position: absolute;
+        left: 35%;
+    }
+}
+
+@media( max-width : 386px ) {
+
+}
+
+/*Android*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 767px) {
+    .number-input-group {
+        width: 36%;
+    }
+    /*Step 2*/
+    .post-input-group{
+        width: 61%;
+    }
+
+    /*Step 2-3*/
+    .step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-1 > .step-2-3-chooses-button {
+        width: 30.3%;
+        font-size: 28px;
+    }
+    .step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-2 > .step-2-3-chooses-button {
+        width: 30.3%;
+        font-size: 28px;
+    }
+
+    .step2-4 > .step-2-4-answers > .button-at-time{
+        width: 47%;
+    }
+
+
+    /*Step 2-6*/
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30.3%;
+    }
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30.3%;
+    }
+
+    /*Step 2-7*/
+    .step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-1 > .step-2-7-chooses-button{
+        width: 30.3%;
+        font-size: 28px;
+    }
+    .step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-2 > .step-2-7-chooses-button{
+        width: 30.3%;
+        font-size: 28px;
+    }
+    .button-not-choose-status{
+        font-size: 28px !important;
+    }
+
+    /*Step 2-8*/
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-1 > .step-2-8-chooses-button{
+        width: 21.9%;
+        font-size: 23px;
+    }
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-2 > .step-2-8-chooses-button{
+        width: 21.9%;
+        font-size: 23px;
+    }
+
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-3 > .step-2-8-chooses-button {
+        width: 47%;
+        font-size: 25px;
+    }
+
+    .button-bodaiin{
+        padding: 0px;
+        vertical-align: bottom;
+        font-size: 20px !important;
+    }
+
+    /*Step 2-9*/
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-1 > .step-2-9-chooses-button{
+        width: 21.9%;
+        font-size: 23px;
+    }
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-2 > .step-2-9-chooses-button{
+        width: 21.9%;
+        font-size: 23px;
+    }
+
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-3 > .step-2-9-chooses-button {
+        width: 47%;
+        font-size: 25px;
+    }
+
+    .button-past-bodaiin{
+        padding: 0px;
+        vertical-align: bottom;
+        font-size: 20px !important;
+    }
+}
+
+/*ipad*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    .number-input-group {
+        width: 36%;
+    }
+    /*Step 2*/
+    .post-input-group{
+        width: 61%;
+    }
+
+    /*Step 2-3*/
+
+    /*Step 2-6*/
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 21.7%;
+    }
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30%;
+    }
+
+}
+
+/*Ipad - Ipad mini*/
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    /*Step 2-3*/
+    .step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-1 > .step-2-3-chooses-button {
+        width: 30.3%;
+        font-size: 28px;
+    }
+    .step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-2 > .step-2-3-chooses-button {
+        width: 30.3%;
+        font-size: 28px;
+    }
+
+    /*Step 2-4*/
+    .step2-4 > .step-2-4-answers > .button-at-time{
+        width: 47%;
+    }
+
+    /*Step 2-6*/
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30.3%;
+    }
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30.3%;
+    }
+
+    /*Step 2-7*/
+    .step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-1 > .step-2-7-chooses-button{
+        width: 30.3%;
+        font-size: 28px;
+    }
+    .step2-7 > .step-2-7-chooses > .step-2-7-chooses-group-2 > .step-2-7-chooses-button{
+        width: 30.3%;
+        font-size: 28px;
+    }
+    .button-not-choose-status{
+        font-size: 28px !important;
+    }
+
+    /*step 2-8*/
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-1 > .step-2-8-chooses-button {
+        width: 21.9%;
+        font-size: 30px;
+    }
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-2 > .step-2-8-chooses-button {
+        width: 21.9%;
+        font-size: 30px;
+    }
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-3 > .step-2-8-chooses-button {
+        width: 47%;
+        font-size: 30px;
+    }
+    .button-bodaiin{
+        font-size: 23.5px !important;
+        padding: 0px !important;
+        vertical-align: bottom;
+    }
+
+    /*Step 2-9*/
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-1 > .step-2-9-chooses-button{
+        width: 21.9%;
+        font-size: 30px;
+    }
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-2 > .step-2-9-chooses-button{
+        width: 21.9%;
+        font-size: 30px;
+    }
+
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-3 > .step-2-9-chooses-button {
+        width: 47%;
+        font-size: 30px;
+    }
+
+    .button-past-bodaiin{
+        font-size: 23.5px !important;
+        padding: 0px !important;
+        vertical-align: bottom;
+    }
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1)  {
+    /*Step 2-3*/
+    .step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-1 > .step-2-3-chooses-button{
+        width: 30.9%;
+    }
+    .step2-3 > .step-2-3-chooses > .step-2-3-chooses-group-2 > .step-2-3-chooses-button{
+        width: 30.9%;
+    }
+
+    /*Step 2-4*/
+    .step2-4 > .step-2-4-answers > .button-at-time{
+        width: 47.5%;
+    }
+
+    /*Step 2-6*/
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-1 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30.3%;
+    }
+    .step2-6 > .step-2-6-chooses > .step-2-6-chooses-group-2 > .step-2-6-chooses-button {
+        font-size: 36px;
+        width: 30.3%;
+    }
+
+    /*Step 2-7*/
+    /*step 2-8*/
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-1 > .step-2-8-chooses-button {
+        width: 22.6%;
+        font-size: 30px;
+    }
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-2 > .step-2-8-chooses-button {
+        width: 22.6%;
+        font-size: 30px;
+    }
+    .step2-8 > .step-2-8-chooses > .step-2-8-chooses-group-3 > .step-2-8-chooses-button {
+        width: 47.5%;
+        font-size: 30px;
+    }
+    .button-bodaiin{
+        font-size: 23.5px !important;
+        padding: 0px !important;
+        vertical-align: bottom;
+    }
+
+    /*Step 2-9*/
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-1 > .step-2-9-chooses-button{
+        width: 22.6%;
+        font-size: 30px;
+    }
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-2 > .step-2-9-chooses-button{
+        width: 22.6%;
+        font-size: 30px;
+    }
+
+    .step2-9 > .step-2-9-chooses > .step-2-9-chooses-group-3 > .step-2-9-chooses-button {
+        width: 47.5%;
+        font-size: 30px;
+    }
+
+    .button-past-bodaiin{
+        font-size: 23.5px !important;
+        padding: 0px !important;
+        vertical-align: bottom;
+    }
+}
+
+/*Ipad pro*/
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    .number-input-group {
+        width: 28%;
+    }
+    /*Step 2*/
+    .post-input-group{
+        width: 70%;
+    }
+
+    /*Step 2-3*/
+    /*Step 2-4*/
+    .step2-4 > .step-2-4-answers > .button-at-time{
+        width: 47.5%;
+    }
+}
+
+@media only screen
+and (min-device-width: 1024px)
+and (max-device-width: 1366px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 1.5) {
+    /*Step 2-3*/
+}
+
+
